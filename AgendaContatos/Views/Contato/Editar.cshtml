@@ -14,21 +14,25 @@
     <div class="mb-3">
         <label for="nome">Nome</label>
         <input type="text" asp-for="Nome" class="form-control" placeholder="Ex: João Medeiros">
+        @Html.ValidationMessageFor(x => x.Nome)
     </div>
 
     <div class="mb-3">
         <label for="email">E-mail</label>
         <input type="text" asp-for="Email" class="form-control" placeholder="Ex: joao@gmail.com">
+        @Html.ValidationMessageFor(x => x.Email)
     </div>
 
     <div class="mb-3">
         <label for="celular">Celular</label>
         <input type="text" asp-for="Celular" class="form-control" placeholder="Ex: (11) 96468-1689 ">
+        @Html.ValidationMessageFor(x => x.Celular)
     </div>
 
     <div class="mb-3">
         <label for="observacao">Observação</label>
         <input type="text" asp-for="Observacao" class="form-control" placeholder="Ex: Este é um desafio de programação">
+        @Html.ValidationMessageFor(x => x.Observacao)
     </div>
 
     <div class="d-grid gap-2">
